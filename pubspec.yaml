@@ -17,19 +17,16 @@ dependencies:
   dio_cookie_manager: ^1.0.0
   cookie_jar: ^1.0.1
   crypto: ^2.1.5
-  uuid: ^2.1.0
+  uuid: ^2.2.0
   path_provider: ^1.6.11
-  file_picker: ^1.12.0
+  file_picker: ^1.13.3
   carousel_slider: ^2.2.1
   flutter_html: ^1.0.2
   qr_flutter: ^3.2.0
   flutter_speed_dial: ^1.2.5
-  extended_image: ^1.0.0
-  # extended_image:
-  #   git:
-  #     url: git://github.com/jonataslaw/extended_image.git
+  extended_image: ^1.1.0
   sticky_headers: ^0.1.8+1
-  flutter_rating_bar: ^3.0.1
+  flutter_rating_bar: ^3.0.1+1
   waterfall_flow: ^2.0.2
   solid_bottom_sheet: ^0.1.9
   flutter_easyrefresh: ^2.1.5
