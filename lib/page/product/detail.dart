@@ -176,7 +176,7 @@ class ProductDetail extends StatelessWidget {
         autoPlay: false,
         height: height > 300 ? 300 : height,
       ),
-      itemBuilder: (final context, final index) {
+      itemBuilder: (final context, final index, final realIndex) {
         return InkWell(
           child: ExtendedImage.network(
             covers[index] + ".s.jpg",
@@ -304,7 +304,7 @@ class ProductDetail extends StatelessWidget {
                         fontSize: 38,
                       ),
                     ),
-                    RatingBar(
+                    RatingBar.builder(
                       tapOnlyMode: true,
                       maxRating: 10,
                       minRating: 0,
@@ -407,7 +407,7 @@ class ProductDetail extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    RatingBar(
+                    RatingBar.builder(
                       tapOnlyMode: true,
                       maxRating: 10,
                       minRating: 0,

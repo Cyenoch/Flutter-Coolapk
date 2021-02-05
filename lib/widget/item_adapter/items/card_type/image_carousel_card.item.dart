@@ -20,7 +20,7 @@ class ImageCarouselCard extends StatelessWidget {
           enableInfiniteScroll: source["entities"].length > 1,
         ),
         itemCount: source["entities"].length,
-        itemBuilder: (final context, final index) => InkWell(
+        itemBuilder: (final context, final index, final realIndex) => InkWell(
           onTap: () {},
           child: ExtendedImage.network(
             source["entities"][index]["pic"],

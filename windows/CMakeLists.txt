@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(flutter_coolapk LANGUAGES CXX)
+project(coolapk_flutter LANGUAGES CXX)
 
-set(BINARY_NAME "flutter_coolapk")
+set(BINARY_NAME "coolapk_flutter")
 
 cmake_policy(SET CMP0063 NEW)
 

@@ -12,7 +12,12 @@ void handleOnLinkTap(String url, final BuildContext context,
   if (url.startsWith("pic=")) {
     ImageBox.push(context, urls: [url.split("=")[1]]);
   } else if (url.startsWith(RegExp(r'/u/'))) {
-    UserSpacePage.entry(context, url.replaceAll(RegExp(r'/u/'), ""));
+    var username = url.replaceAll(RegExp(r'/u/'), "");
+    if (username is String) {
+      // TODO:
+    } else {
+      UserSpacePage.entry(context, url.replaceAll(RegExp(r'/u/'), ""));
+    }
   } else if (url.startsWith(RegExp(r'/feed/'))) {
     Navigator.push(
         context,
@@ -25,8 +30,9 @@ void handleOnLinkTap(String url, final BuildContext context,
       context,
       MaterialPageRoute(
         builder: (context) => TopicDetailPage(
-          tag: url.replaceAll("/t/", "").replaceAll(RegExp(r'\?type=([0-9]*)'), "")
-        ),
+            tag: url
+                .replaceAll("/t/", "")
+                .replaceAll(RegExp(r'\?type=([0-9]*)'), "")),
       ),
     );
   } else {

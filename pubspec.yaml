@@ -7,7 +7,10 @@ environment:
   sdk: ">=2.6.0 <3.0.0"
 
 dependency_overrides:
-  flutter_svg: 0.18.0
+  flutter_svg: ^0.20.0-nullsafety.3
+  extended_image: 1.5.0-dev
+  chewie_audio:
+    git: https://github.com/Sub6Resources/chewie_audio.git
 
 dependencies:
   flutter:
@@ -18,18 +21,18 @@ dependencies:
   cookie_jar: ^1.0.1
   crypto: ^2.1.5
   uuid: ^2.2.0
-  path_provider: ^1.6.11
-  file_picker: ^1.13.3
-  carousel_slider: ^2.2.1
-  flutter_html: ^1.0.2
+  path_provider: ^1.6.27
+  file_picker: ^2.1.5+1
+  carousel_slider: ^3.0.0
+  flutter_html: ^1.2.0
   qr_flutter: ^3.2.0
   flutter_speed_dial: ^1.2.5
-  extended_image: ^1.1.0
+  extended_image: 1.5.0-dev
   sticky_headers: ^0.1.8+1
-  flutter_rating_bar: ^3.0.1+1
+  flutter_rating_bar: ^3.2.0
   waterfall_flow: ^2.0.2
   solid_bottom_sheet: ^0.1.9
-  flutter_easyrefresh: ^2.1.5
+  flutter_easyrefresh: ^2.1.8
   toast: ^0.1.5
   #  dartx: ^0.3.0
   emoji_picker: ^0.1.0

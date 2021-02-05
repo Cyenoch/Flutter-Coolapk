@@ -58,7 +58,7 @@ class ProductItem extends StatelessWidget {
               fontSize: 20,
             ),
           ),
-          RatingBar(
+          RatingBar.builder(
             initialRating: double.parse(
               source["star_average_score"].toString(),
             ),
