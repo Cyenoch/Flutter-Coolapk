@@ -2,61 +2,9 @@
 
 ![Build Action](https://github.com/Cyenoch/Flutter-Coolapk/workflows/Build%20Action/badge.svg)
 
-[Flutter Coolapk 官方网站](https://cyenoch.github.io/flutter-coolapk-website/)
+该项目废弃，请转UWP版[Coolapk-UWP](https://github.com/Cyenoch/Coolapk-UWP/)
 
 ## 兴趣使然
-
-## 本项目主要适配桌面端（宽屏）
-
-- 本项目使用 flutter master channel
-- ~~由于 path_provider 目前没有足够好的 windows 实现，所有 ExtendedImage 对 windows,mac os 都关闭了 cache (找到了)~~
-- 手机使用时(或是宽度小于高度)，导航功能移动至侧滑，而且体验并不是很好
-- ~~窗口大小变更时会导致重新获取信息，请尽量避免 (解决了)~~
-
-## 下载地址：（适合国内，但注意不要在这个网站上登录）
-
-- 注意，版本的时间是错误的，要＋一天才是实际编译时间!!!
-- <http://github-mirror.bugkiller.org/Cyenoch/Flutter-Coolapk/releases/>
-- 根据你所用设备的版本进行下载
-- 如果提示缺少什么什么dll，请安装这个 [VC_redist.x64](https://cyenoch.lanzous.com/ibkt3eh)
-- 安卓版：（不懂就下载 armeabi-v7a 的）
-  - app-armeabi-v7a-release.apk
-  - app-arm64-v8a-release.apk
-  - app-x86_64-release.apk
-
-## 调试开发:
-
-- Windows: flutter run -d windows
-
-## 目录结构说明->
-
-```emm
-ios/ ios平台相关
-android/ android平台相关
-windows/ windows平台相关
-linux/ linux平台相关
-assets/ 资源文件夹
-.github/workflows/ github Actions配置
-lib/
-  /network/
-    /api/ 存放基本的api
-    /model/ 存放常用的Model
-  /page/
-    /collection_list/ 与收藏有关的
-    /detail/ 动态详情
-    /image_box/ 显示图片的页面
-    /auto_page/ 暂无
-    /home/ 主页
-    /launcher/ 启动页
-    /login/ 登录页
-    /product/ 数码详情页
-  /store/ 全局状态
-  /util/ 通用工具
-  /widget/ 存放控件
-    /data_list/ 数据列表控件(准备转成auto_page)
-    /item_adapter/ item适配器
-test/ 测试(基本不用)
-```
 
 ## 功能完成情况
 
@@ -161,16 +109,6 @@ test/ 测试(基本不用)
 ### 项目使用 Provider 进行全局状态管理,主要由两个全局状态,Theme 和 User
 
 ### item_adapter 目录下的 auto_item_adapter 进行 item 的适配
-
-## 欢迎提交 pr
-
-## 若果遇到了什么bug，或是有什么宝贵的意见，或是想找人一起打会游戏，
-
-- 欢迎加入Flutter酷安，群聊号码：823690281
-
-## 如果想加入到开发，或是学习Flutter欢迎进群 py 讨论
-
-- [751659171](https://jq.qq.com/?_wv=1027&k=5iu6dt5)
 
 ### 欢迎给我点赞(star) 投币(捐赠) 转发(fork)三连支持=,=你的每亿点帮助都会转化成我的动力
 
